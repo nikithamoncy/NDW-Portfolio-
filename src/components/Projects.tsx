@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
     const projects = [
@@ -25,6 +26,7 @@ export default function Projects() {
             link: "#",
             tech: ["n8n", "OpenAI", "Instagram Graph API"],
             color: "from-pink-500 to-purple-500",
+            image: "/instagram-agent.png"
         },
         {
             title: "Intelligent Inbox Manager",
@@ -33,6 +35,7 @@ export default function Projects() {
             link: "#",
             tech: ["n8n", "LLM Integration", "Telegram API"],
             color: "from-green-500 to-emerald-500",
+            image: "/inbox-agent.png"
         }
     ];
 
@@ -73,7 +76,13 @@ export default function Projects() {
                                     </div>
                                 </div>
                             ) : (
-                                <div className={`h-2 w-full bg-gradient-to-r ${project.color}`}></div>
+                                <div className="relative w-full aspect-video overflow-hidden border-b border-slate-100 bg-slate-100">
+                                    {project.image ? (
+                                        <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                    ) : (
+                                        <div className={`h-full w-full bg-gradient-to-br ${project.color}`}></div>
+                                    )}
+                                </div>
                             )}
 
                             <div className="p-8 flex flex-col flex-1">
