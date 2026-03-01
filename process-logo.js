@@ -3,7 +3,7 @@ const Jimp = require("jimp");
 async function main() {
     try {
         console.log("Reading image...");
-        const originalImage = await Jimp.read("public/logo.png");
+        const originalImage = await Jimp.read("public/logo.jpg");
 
         const w = originalImage.bitmap.width;
         const h = originalImage.bitmap.height;
