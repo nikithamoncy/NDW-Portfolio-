@@ -46,20 +46,48 @@ export default function Projects() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col h-full">
-                            <div className={`h-2 w-full bg-gradient-to-r ${project.color}`}></div>
+                        <a
+                            key={index}
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col h-full block"
+                        >
+                            {/* Card Header / Image Area */}
+                            {project.type === "Website Development" ? (
+                                <div className="relative w-full aspect-video overflow-hidden border-b border-slate-100 bg-slate-100">
+                                    <div className="w-[1440px] h-[900px] origin-top-left scale-[0.25] sm:scale-[0.35] md:scale-[0.27] lg:scale-[0.33] xl:scale-[0.4]">
+                                        <iframe
+                                            src={project.link}
+                                            className="w-full h-full pointer-events-none"
+                                            scrolling="no"
+                                            tabIndex={-1}
+                                            title={project.title}
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                        <div className="bg-white/90 backdrop-blur-sm text-primary p-3 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                            <ExternalLink size={24} />
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div className={`h-2 w-full bg-gradient-to-r ${project.color}`}></div>
+                            )}
+
                             <div className="p-8 flex flex-col flex-1">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
-                                        <span className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-3 tracking-wide uppercase">
+                                        <span className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-3 tracking-wide uppercase group-hover:bg-sky-50 group-hover:text-primary transition-colors">
                                             {project.type}
                                         </span>
-                                        <h3 className="text-2xl font-bold text-slate-900">{project.title}</h3>
+                                        <h3 className="text-2xl font-bold text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
                                     </div>
-                                    {project.link !== "#" && (
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-50 rounded-full text-slate-400 hover:text-primary hover:bg-sky-50 transition-colors">
+                                    {project.type !== "Website Development" && project.link !== "#" && (
+                                        <div className="p-2 bg-slate-50 rounded-full text-slate-400 group-hover:text-primary group-hover:bg-sky-50 transition-colors">
                                             <ExternalLink size={20} />
-                                        </a>
+                                        </div>
                                     )}
                                 </div>
 
@@ -70,14 +98,14 @@ export default function Projects() {
                                 <div className="mt-auto">
                                     <div className="flex flex-wrap gap-2">
                                         {project.tech.map((tech, i) => (
-                                            <span key={i} className="px-3 py-1 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 text-sm font-medium">
+                                            <span key={i} className="px-3 py-1 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 text-sm font-medium group-hover:border-slate-300 transition-colors">
                                                 {tech}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>
