@@ -47,18 +47,18 @@ export default function Projects() {
                     <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto">Real-world examples of how I transform businesses through web development and AI automation.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex flex-col gap-6 md:gap-8 max-w-5xl mx-auto">
                     {projects.map((project, index) => (
                         <a
                             key={index}
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col h-full block"
+                            className="bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col md:flex-row items-stretch block"
                         >
                             {/* Card Header / Image Area */}
                             {project.type === "Website Development" ? (
-                                <div className="relative w-full aspect-video overflow-hidden border-b border-slate-100 bg-slate-100">
+                                <div className="relative w-full md:w-2/5 lg:w-1/2 aspect-video md:aspect-auto overflow-hidden border-b md:border-b-0 md:border-r border-slate-100 bg-slate-100 flex-shrink-0 min-h-[220px]">
                                     <div className="absolute top-0 left-0 w-[400%] h-[400%] scale-[0.25] origin-top-left">
                                         <iframe
                                             src={project.link}
@@ -76,16 +76,16 @@ export default function Projects() {
                                     </div>
                                 </div>
                             ) : (
-                                <div className="relative w-full aspect-video overflow-hidden border-b border-slate-100 bg-slate-100">
+                                <div className="relative w-full md:w-2/5 lg:w-1/2 aspect-video md:aspect-auto overflow-hidden border-b md:border-b-0 md:border-r border-slate-100 bg-slate-100 flex-shrink-0 min-h-[220px]">
                                     {project.image ? (
-                                        <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        <Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, 40vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                     ) : (
                                         <div className={`h-full w-full bg-gradient-to-br ${project.color}`}></div>
                                     )}
                                 </div>
                             )}
 
-                            <div className="p-6 md:p-8 flex flex-col flex-1">
+                            <div className="p-6 md:p-8 lg:p-10 flex flex-col flex-1 justify-center">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
                                         <span className="inline-block px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 text-[10px] md:text-xs font-bold mb-3 tracking-wide uppercase group-hover:bg-sky-50 group-hover:text-primary transition-colors">
