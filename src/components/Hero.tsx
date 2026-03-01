@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Code } from "lucide-react";
+import { ArrowRight, Bot, Zap } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
     return (
@@ -60,42 +61,43 @@ export default function Hero() {
 
                     {/* Visual Content */}
                     <motion.div
-                        className="flex-1 w-full max-w-lg lg:max-w-xl"
+                        className="flex-1 w-full max-w-sm md:max-w-md relative mt-12 md:mt-0 mx-auto"
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <div className="relative aspect-square md:aspect-[4/5] rounded-3xl bg-gradient-to-tr from-slate-100 to-slate-50 border border-slate-200 overflow-hidden shadow-2xl flex items-center justify-center">
-                            <div className="absolute inset-0 bg-grid-slate-200/[0.04] bg-[bottom_1px_center]" />
-                            <div className="relative z-10 flex flex-col items-center gap-4 text-slate-400">
-                                <div className="w-24 h-24 rounded-full bg-white shadow-xl flex items-center justify-center text-primary">
-                                    <Code size={40} />
-                                </div>
-                                <div className="text-center">
-                                    <p className="font-semibold text-slate-700">Nikitha Moncy</p>
-                                    <p className="text-sm">Vibe Coder & Automation</p>
-                                </div>
-                            </div>
-
-                            {/* Decorative floating elements */}
-                            <motion.div
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                                className="absolute top-12 -left-6 bg-white p-3 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3"
-                            >
-                                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-xs">AI</div>
-                                <div className="text-xs font-medium text-slate-600">Agents Active</div>
-                            </motion.div>
-
-                            <motion.div
-                                animate={{ y: [0, 10, 0] }}
-                                transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
-                                className="absolute bottom-20 -right-6 bg-white p-3 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3"
-                            >
-                                <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xs">⚡</div>
-                                <div className="text-xs font-medium text-slate-600">Lightning Fast</div>
-                            </motion.div>
+                        <div className="relative aspect-square md:aspect-[4/5] rounded-3xl bg-slate-100 border border-slate-100 shadow-2xl flex items-center justify-center">
+                            <Image src="/hero-image.png" alt="Automation and AI Tools" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover rounded-3xl" priority />
                         </div>
+
+                        {/* Decorative floating elements */}
+                        <motion.div
+                            animate={{ y: [0, -12, 0] }}
+                            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+                            className="absolute top-10 -left-2 md:-left-12 bg-white/95 backdrop-blur-md p-3 md:p-4 rounded-2xl shadow-2xl border border-white/50 flex items-center gap-3 md:gap-4"
+                        >
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                                <Bot size={20} />
+                            </div>
+                            <div>
+                                <p className="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wider mb-0.5">AI Agents</p>
+                                <p className="text-sm md:text-base font-bold text-slate-800">24/7 Active</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            animate={{ y: [0, 12, 0] }}
+                            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
+                            className="absolute bottom-12 -right-2 md:-right-8 bg-white/95 backdrop-blur-md p-3 md:p-4 rounded-2xl shadow-2xl border border-white/50 flex items-center gap-3 md:gap-4"
+                        >
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                                <Zap size={20} />
+                            </div>
+                            <div>
+                                <p className="text-[10px] md:text-xs text-slate-500 font-medium uppercase tracking-wider mb-0.5">Performance</p>
+                                <p className="text-sm md:text-base font-bold text-slate-800">Lightning Fast</p>
+                            </div>
+                        </motion.div>
                     </motion.div>
                 </div>
             </div>
