@@ -26,8 +26,8 @@ export default function Navbar() {
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
             <div className="container-custom flex items-center justify-between">
                 <a href="#" className="flex items-center gap-2 group">
-                    <div className="w-52 h-14 md:w-72 md:h-20 relative flex items-center justify-start transition-transform group-hover:scale-105">
-                        <Image src="/logo-transparent.png" alt="Nikitha Digital Wave Logo" fill sizes="(max-width: 768px) 208px, 288px" className="object-contain object-left" />
+                    <div className="w-64 h-20 md:w-96 md:h-28 relative flex items-center justify-start transition-transform group-hover:scale-105">
+                        <Image src="/logo-transparent.png" alt="Nikitha Digital Wave Logo" fill sizes="(max-width: 768px) 256px, 384px" className="object-contain object-left" />
                     </div>
                 </a>
 
