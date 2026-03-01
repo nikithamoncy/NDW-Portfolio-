@@ -59,7 +59,7 @@ export default function Projects() {
                             {/* Card Header / Image Area */}
                             {project.type === "Website Development" ? (
                                 <div className="relative w-full aspect-video overflow-hidden border-b border-slate-100 bg-slate-100">
-                                    <div className="w-[1440px] h-[900px] origin-top-left scale-[0.25] sm:scale-[0.35] md:scale-[0.27] lg:scale-[0.33] xl:scale-[0.4]">
+                                    <div className="absolute top-0 left-0 w-[400%] h-[400%] scale-[0.25] origin-top-left">
                                         <iframe
                                             src={project.link}
                                             className="w-full h-full pointer-events-none"
@@ -85,13 +85,13 @@ export default function Projects() {
                                 </div>
                             )}
 
-                            <div className="p-8 flex flex-col flex-1">
+                            <div className="p-6 md:p-8 flex flex-col flex-1">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
-                                        <span className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-3 tracking-wide uppercase group-hover:bg-sky-50 group-hover:text-primary transition-colors">
+                                        <span className="inline-block px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 text-[10px] md:text-xs font-bold mb-3 tracking-wide uppercase group-hover:bg-sky-50 group-hover:text-primary transition-colors">
                                             {project.type}
                                         </span>
-                                        <h3 className="text-2xl font-bold text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
+                                        <h3 className="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-primary transition-colors">{project.title}</h3>
                                     </div>
                                     {project.type !== "Website Development" && project.link !== "#" && (
                                         <div className="p-2 bg-slate-50 rounded-full text-slate-400 group-hover:text-primary group-hover:bg-sky-50 transition-colors">
