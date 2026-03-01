@@ -23,7 +23,7 @@ export default function Navbar() {
     ];
 
     return (
-        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
+        <header className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
             <div className="container-custom flex items-center justify-between">
                 <a href="#" className="flex items-center gap-2 group">
                     <div className="w-80 h-24 md:w-[28rem] md:h-36 relative flex items-center justify-start transition-transform group-hover:scale-105">
