@@ -15,7 +15,7 @@ export default function Projects() {
             title: "Aura Kinetics Gym",
             type: "Website Development",
             description: "A sleek, user-friendly gym website focusing on class schedules and member onboarding.",
-            link: "https://aura-kinetics-gym.vercel.app/",
+            link: "https://luminar-salon.vercel.app/",
             tech: ["React", "Tailwind CSS", "TypeScript"],
             color: "from-blue-500 to-cyan-500",
         },
