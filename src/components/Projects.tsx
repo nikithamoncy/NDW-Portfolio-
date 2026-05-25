@@ -12,9 +12,9 @@ export default function Projects() {
             color: "from-sky-500 to-blue-500",
         },
         {
-            title: "Aura Kinetics Gym",
+            title: "Luminar Salon",
             type: "Website Development",
-            description: "A sleek, user-friendly gym website focusing on class schedules and member onboarding.",
+            description: "An elegant, modern website for a premium beauty salon, featuring service showcases and seamless appointment booking.",
             link: "https://luminar-salon.vercel.app/",
             tech: ["React", "Tailwind CSS", "TypeScript"],
             color: "from-blue-500 to-cyan-500",
