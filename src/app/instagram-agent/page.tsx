@@ -14,7 +14,7 @@ export default function InstagramAgentPage() {
             </div>
 
             {/* SECTION 1 — HERO SECTION */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-slate-50">
+            <section className="relative pt-32 pb-12 md:pt-48 md:pb-20 overflow-hidden bg-slate-50">
                 {/* Background glow effects - Adjusted for light theme */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-purple-400/20 rounded-full blur-[120px] pointer-events-none"></div>
                 <div className="absolute bottom-0 right-0 w-[500px] h-[400px] bg-blue-400/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -43,8 +43,29 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 2 — THE PROBLEM */}
-            <section className="py-20 border-y border-slate-100">
+            {/* SECTION 2 — DEMO VIDEO (Moved up for better conversion) */}
+            <section id="demo" className="pb-24 pt-8 bg-slate-50 relative overflow-hidden">
+                <div className="container-custom max-w-4xl mx-auto text-center relative z-10">
+                    {/* Exclusively vertical shorts player */}
+                    <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-[9/16] w-[300px] md:w-[340px] mx-auto group">
+                        {/* Glow effect matching the video */}
+                        <div className="absolute -inset-4 bg-purple-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+                        <iframe 
+                            src="https://www.youtube.com/embed/oaGVTwC6ukQ?autoplay=1&mute=1&loop=1&playlist=oaGVTwC6ukQ" 
+                            title="Intelligent Instagram Sales Agent Demo"
+                            className="absolute top-0 left-0 w-full h-full"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    <p className="text-slate-500 mt-6 text-sm font-medium tracking-wide uppercase">
+                        Watch the agent in action
+                    </p>
+                </div>
+            </section>
+
+            {/* SECTION 3 — THE PROBLEM */}
+            <section className="py-20 border-t border-slate-100">
                 <div className="container-custom">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">The Problem</h2>
@@ -88,7 +109,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 3 — THE SOLUTION */}
+            {/* SECTION 4 — THE SOLUTION */}
             <section className="py-20 bg-slate-50">
                 <div className="container-custom max-w-4xl mx-auto">
                     <div className="mb-12">
@@ -115,7 +136,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 4 — HOW IT WORKS */}
+            {/* SECTION 5 — HOW IT WORKS */}
             <section className="py-20 border-y border-slate-100">
                 <div className="container-custom max-w-5xl mx-auto">
                     <div className="text-center mb-16">
@@ -147,7 +168,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 5 — TECH STACK */}
+            {/* SECTION 6 — TECH STACK */}
             <section className="py-20 text-center bg-slate-50">
                 <div className="container-custom">
                     <h2 className="text-2xl font-bold mb-8 text-slate-800">Tech Stack</h2>
@@ -168,30 +189,8 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 6 — DEMO VIDEO */}
-            <section id="demo" className="py-24 border-y border-slate-100 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-white via-purple-50/50 to-white pointer-events-none"></div>
-                <div className="container-custom max-w-4xl mx-auto text-center relative z-10">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">See It In Action</h2>
-                    <p className="text-slate-600 mb-12 max-w-2xl mx-auto">
-                        Watch the full agent handle a real DM conversation — from first message to confirmed booking.
-                    </p>
-                    
-                    {/* Exclusively vertical shorts player */}
-                    <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-[9/16] w-[300px] md:w-[340px] mx-auto">
-                        <iframe 
-                            src="https://www.youtube.com/embed/oaGVTwC6ukQ?autoplay=1&mute=1&loop=1&playlist=oaGVTwC6ukQ" 
-                            title="Intelligent Instagram Sales Agent Demo"
-                            className="absolute top-0 left-0 w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div>
-            </section>
-
             {/* SECTION 7 — WORKFLOW SCREENSHOT */}
-            <section className="py-24 bg-slate-50">
+            <section className="py-24 bg-white border-t border-slate-100">
                 <div className="container-custom max-w-6xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Behind The Scenes</h2>
