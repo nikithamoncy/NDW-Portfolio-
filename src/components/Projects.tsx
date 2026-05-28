@@ -23,7 +23,7 @@ export default function Projects() {
             title: "Intelligent Instagram Sales Agent",
             type: "AI Automation",
             description: "An AI agent that automates responses to potential customers instantly. Detects user intent, answers FAQs using a custom knowledge base, and saves leads to Google Sheets.",
-            link: "#",
+            link: "/instagram-agent",
             tech: ["n8n", "OpenAI", "Instagram Graph API"],
             color: "from-pink-500 to-purple-500",
             image: "/instagram-agent.png"
