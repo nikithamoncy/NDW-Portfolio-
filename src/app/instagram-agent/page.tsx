@@ -36,7 +36,7 @@ export default function InstagramAgentPage() {
                         <Link href="#demo" className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(147,51,234,0.5)] transform hover:-translate-y-1">
                             Watch Demo
                         </Link>
-                        <Link href="/#contact" className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border border-slate-200 hover:border-slate-300 text-slate-700 hover:text-slate-900 hover:bg-slate-50 font-medium transition-all duration-300 shadow-sm">
+                        <Link href="/#contact" className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border-2 border-slate-300 hover:border-slate-400 text-slate-800 hover:text-slate-900 hover:bg-slate-50 font-semibold transition-all duration-300 shadow-sm">
                             Let&apos;s Talk
                         </Link>
                     </div>
@@ -75,8 +75,8 @@ export default function InstagramAgentPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {/* Card 1 */}
                         <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-                            <div className="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center mb-6 text-rose-500 border border-rose-100">
-                                <Clock size={24} />
+                            <div className="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mb-6 text-purple-600 border border-purple-200">
+                                <Clock size={28} />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Missed DMs = Missed Bookings</h3>
                             <p className="text-slate-600 leading-relaxed text-sm">
@@ -86,8 +86,8 @@ export default function InstagramAgentPage() {
                         
                         {/* Card 2 */}
                         <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-                            <div className="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6 text-amber-500 border border-amber-100">
-                                <Repeat size={24} />
+                            <div className="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mb-6 text-purple-600 border border-purple-200">
+                                <Repeat size={28} />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Repetitive Questions Drain Staff</h3>
                             <p className="text-slate-600 leading-relaxed text-sm">
@@ -97,8 +97,8 @@ export default function InstagramAgentPage() {
                         
                         {/* Card 3 */}
                         <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-                            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-blue-500 border border-blue-100">
-                                <TrendingDown size={24} />
+                            <div className="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mb-6 text-purple-600 border border-purple-200">
+                                <TrendingDown size={28} />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Leads Fall Through The Cracks</h3>
                             <p className="text-slate-600 leading-relaxed text-sm">
@@ -146,10 +146,10 @@ export default function InstagramAgentPage() {
                     
                     <div className="flex flex-col md:flex-row relative">
                         {/* Connecting Line (Desktop) */}
-                        <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-purple-200/0 via-purple-300 to-purple-200/0 z-0"></div>
+                        <div className="hidden md:block absolute top-[28px] left-[10%] right-[10%] h-1 bg-gradient-to-r from-purple-200/0 via-purple-400 to-purple-200/0 z-0"></div>
                         
                         {/* Connecting Line (Mobile) */}
-                        <div className="md:hidden absolute top-[10%] bottom-[10%] left-[28px] w-0.5 bg-gradient-to-b from-purple-200/0 via-purple-300 to-purple-200/0 z-0"></div>
+                        <div className="md:hidden absolute top-[10%] bottom-[10%] left-[28px] w-1 bg-gradient-to-b from-purple-200/0 via-purple-400 to-purple-200/0 z-0"></div>
 
                         {[
                             { step: "01", text: "Customer sends a DM or comments on a post" },
@@ -181,7 +181,7 @@ export default function InstagramAgentPage() {
                             "Supabase / PostgreSQL", 
                             "RAG (Retrieval-Augmented Generation)"
                         ].map((tech, i) => (
-                            <span key={i} className="px-5 py-3 rounded-full bg-white border border-slate-200 text-slate-700 font-semibold tracking-wide shadow-sm hover:border-purple-300 hover:shadow-md transition-all cursor-default text-sm md:text-base">
+                            <span key={i} className="px-5 py-3 rounded-full bg-purple-50 border border-purple-200 text-purple-800 font-semibold tracking-wide shadow-sm hover:bg-purple-100 hover:border-purple-300 hover:shadow-md transition-all cursor-default text-sm md:text-base">
                                 {tech}
                             </span>
                         ))}
