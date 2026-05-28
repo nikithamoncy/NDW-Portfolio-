@@ -13,7 +13,7 @@ export default function InstagramAgentPage() {
                 </Link>
             </div>
 
-            {/* SECTION 1 — HERO SECTION */}
+            {/* SECTION 1 - HERO SECTION */}
             <section className="relative pt-32 pb-12 md:pt-48 md:pb-20 overflow-hidden bg-slate-50">
                 {/* Background glow effects - Adjusted for light theme */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-purple-400/20 rounded-full blur-[120px] pointer-events-none"></div>
@@ -29,7 +29,7 @@ export default function InstagramAgentPage() {
                     </h1>
                     
                     <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
-                        An AI-powered agent that lives inside Instagram DMs — qualifying leads, answering questions, and booking appointments automatically, 24 hours a day, 7 days a week. Zero human involvement needed.
+                        An AI-powered agent that lives inside Instagram DMs - qualifying leads, answering questions, and booking appointments automatically, 24 hours a day, 7 days a week. Zero human involvement needed.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -43,7 +43,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 2 — DEMO VIDEO (Moved up for better conversion) */}
+            {/* SECTION 2 - DEMO VIDEO (Moved up for better conversion) */}
             <section id="demo" className="pb-24 pt-8 bg-slate-50 relative overflow-hidden">
                 <div className="container-custom max-w-4xl mx-auto text-center relative z-10">
                     {/* Exclusively vertical shorts player */}
@@ -64,7 +64,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 3 — THE PROBLEM */}
+            {/* SECTION 3 - THE PROBLEM */}
             <section className="py-20 border-t border-slate-100">
                 <div className="container-custom">
                     <div className="text-center mb-16">
@@ -91,7 +91,7 @@ export default function InstagramAgentPage() {
                             </div>
                             <h3 className="text-xl font-bold mb-3">Repetitive Questions Drain Staff</h3>
                             <p className="text-slate-600 leading-relaxed text-sm">
-                                Staff spend hours answering the same questions about pricing, availability, and services — time better spent on clients.
+                                Staff spend hours answering the same questions about pricing, availability, and services - time better spent on clients.
                             </p>
                         </div>
                         
@@ -109,23 +109,23 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 4 — THE SOLUTION */}
+            {/* SECTION 4 - THE SOLUTION */}
             <section className="py-20 bg-slate-50">
                 <div className="container-custom max-w-4xl mx-auto">
                     <div className="mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">What Was Built</h2>
                         <p className="text-lg text-slate-700 leading-relaxed bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
-                            A fully custom AI agent built on n8n, connected to the official Meta Graph API, and powered by OpenAI. The agent uses a RAG (Retrieval-Augmented Generation) system trained on the business&apos;s own information — services, pricing, staff, policies — so every reply feels natural and accurate, not robotic.
+                            A fully custom AI agent built on n8n, connected to the official Meta Graph API, and powered by OpenAI. The agent uses a RAG (Retrieval-Augmented Generation) system trained on the business&apos;s own information - services, pricing, staff, policies - so every reply feels natural and accurate, not robotic.
                         </p>
                     </div>
                     
                     <div className="space-y-4">
                         {[
-                            "24/7 Instant DM Responses — Automatically greets prospects and handles full multi-turn conversations without any delays",
-                            "Smart Lead Qualification — Detects user intent and guides high-ticket inquiries through the right conversation path",
-                            "Automated Appointment Booking — Collects name, preferred time, and contact details naturally inside the chat",
-                            "Live Google Sheets Sync — Every booking and lead is instantly saved to a Google Sheet for the salon team to action",
-                            "Comment-to-DM Automation — Replies to post comments automatically and drives users into DMs to convert them"
+                            "24/7 Instant DM Responses - Automatically greets prospects and handles full multi-turn conversations without any delays",
+                            "Smart Lead Qualification - Detects user intent and guides high-ticket inquiries through the right conversation path",
+                            "Automated Appointment Booking - Collects name, preferred time, and contact details naturally inside the chat",
+                            "Live Google Sheets Sync - Every booking and lead is instantly saved to a Google Sheet for the salon team to action",
+                            "Comment-to-DM Automation - Replies to post comments automatically and drives users into DMs to convert them"
                         ].map((item, i) => (
                             <div key={i} className="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:border-purple-200 transition-colors">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-500 mr-4 flex-shrink-0 mt-0.5" />
@@ -136,7 +136,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 5 — HOW IT WORKS */}
+            {/* SECTION 5 - HOW IT WORKS */}
             <section className="py-20 border-y border-slate-100">
                 <div className="container-custom max-w-5xl mx-auto">
                     <div className="text-center mb-16">
@@ -168,7 +168,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 6 — TECH STACK */}
+            {/* SECTION 6 - TECH STACK */}
             <section className="py-20 text-center bg-slate-50">
                 <div className="container-custom">
                     <h2 className="text-2xl font-bold mb-8 text-slate-800">Tech Stack</h2>
@@ -189,13 +189,13 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 7 — WORKFLOW SCREENSHOT */}
+            {/* SECTION 7 - WORKFLOW SCREENSHOT */}
             <section className="py-24 bg-white border-t border-slate-100">
                 <div className="container-custom max-w-6xl mx-auto">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Behind The Scenes</h2>
                         <p className="text-slate-600">
-                            The n8n workflow powering the entire agent — from message detection to AI response to data sync.
+                            The n8n workflow powering the entire agent - from message detection to AI response to data sync.
                         </p>
                     </div>
                     
@@ -223,7 +223,7 @@ export default function InstagramAgentPage() {
                 </div>
             </section>
 
-            {/* SECTION 8 — CTA */}
+            {/* SECTION 8 - CTA */}
             <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
                 <div className="container-custom max-w-3xl mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-6 text-white">Want This For Your Business?</h2>

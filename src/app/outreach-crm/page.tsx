@@ -12,7 +12,7 @@ export default function OutreachCRMPage() {
                 </Link>
             </div>
 
-            {/* SECTION 1 — HERO SECTION */}
+            {/* SECTION 1 - HERO SECTION */}
             <section className="relative pt-32 pb-12 md:pt-48 md:pb-20 overflow-hidden bg-slate-50">
                 {/* Background glow effects - matching light theme but with indigo tones */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-indigo-400/20 rounded-full blur-[120px] pointer-events-none"></div>
@@ -28,7 +28,7 @@ export default function OutreachCRMPage() {
                     </h1>
                     
                     <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
-                        A lightweight lead management system built from scratch — because spreadsheets weren&apos;t cutting it anymore.
+                        A lightweight lead management system built from scratch - because spreadsheets weren&apos;t cutting it anymore.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -42,7 +42,7 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 7 — DEMO VIDEO (Moved to top based on previous design choice) */}
+            {/* SECTION 7 - DEMO VIDEO (Moved to top based on previous design choice) */}
             <section id="demo" className="pb-24 pt-8 bg-slate-50 relative overflow-hidden">
                 <div className="container-custom max-w-4xl mx-auto text-center relative z-10">
                     <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-video w-full max-w-3xl mx-auto group flex items-center justify-center">
@@ -60,12 +60,12 @@ export default function OutreachCRMPage() {
                         See It In Action
                     </p>
                     <p className="text-slate-400 mt-2 text-sm max-w-lg mx-auto">
-                        A real walkthrough of the system — from the messy spreadsheet problem to the clean CRM solution.
+                        A real walkthrough of the system - from the messy spreadsheet problem to the clean CRM solution.
                     </p>
                 </div>
             </section>
 
-            {/* SECTION 2 — THE PROBLEM */}
+            {/* SECTION 2 - THE PROBLEM */}
             <section className="py-20 border-t border-slate-100">
                 <div className="container-custom">
                     <div className="text-center mb-16">
@@ -110,7 +110,7 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 3 — THE STORY */}
+            {/* SECTION 3 - THE STORY */}
             <section className="py-24 bg-slate-50 border-t border-slate-100">
                 <div className="container-custom max-w-4xl mx-auto">
                     <div className="text-center mb-12">
@@ -123,7 +123,7 @@ export default function OutreachCRMPage() {
                         <div className="relative bg-white rounded-3xl p-10 md:p-14 shadow-xl border-l-[6px] border-l-indigo-600 border-y border-r border-slate-100">
                             <Quote className="absolute top-8 left-8 w-12 h-12 text-indigo-100 -z-0 transform -translate-y-4 -translate-x-2" />
                             <p className="relative z-10 text-xl md:text-2xl leading-relaxed text-slate-700 font-medium italic mb-8">
-                                "Handling leads in Google Sheets gets messy very fast. I had to check the sheet every day, calculate follow-up dates manually, update everything after each follow-up. It sounds simple — but doing this daily became too much. I tried some CRM tools too. They were good… but I had to adjust to them, instead of them adjusting to how I work. So I built a simple system for myself."
+                                "Handling leads in Google Sheets gets messy very fast. I had to check the sheet every day, calculate follow-up dates manually, update everything after each follow-up. It sounds simple - but doing this daily became too much. I tried some CRM tools too. They were good… but I had to adjust to them, instead of them adjusting to how I work. So I built a simple system for myself."
                             </p>
                             <div className="flex items-center gap-4 border-t border-slate-100 pt-6">
                                 <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
@@ -134,23 +134,23 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 4 — WHAT WAS BUILT */}
+            {/* SECTION 4 - WHAT WAS BUILT */}
             <section className="py-20 border-t border-slate-100">
                 <div className="container-custom max-w-4xl mx-auto">
                     <div className="mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">What Was Built</h2>
                         <p className="text-lg text-slate-700 leading-relaxed bg-indigo-50/50 p-8 rounded-3xl border border-indigo-100 shadow-sm">
-                            A fully custom CRM web application built around one specific workflow — cold outreach. No bloat, no unnecessary features. Just the exact tools needed to manage leads, track communication, and never miss a follow-up.
+                            A fully custom CRM web application built around one specific workflow - cold outreach. No bloat, no unnecessary features. Just the exact tools needed to manage leads, track communication, and never miss a follow-up.
                         </p>
                     </div>
                     
                     <div className="space-y-4">
                         {[
-                            <span key={1}><strong>Lead Sidebar</strong> — All outreach targets listed in one scrollable panel with color-coded status badges showing exactly where each lead stands</span>,
-                            <span key={2}><strong>Rich Lead Detail Panel</strong> — Click any lead to see full business info, social links, website, location data, and auto-generated outreach email</span>,
-                            <span key={3}><strong>Outreach Timeline</strong> — Track every email sent, log dates, and update statuses in real time with instant auto-save</span>,
-                            <span key={4}><strong>Status Management</strong> — Change lead status (Pending, Responded, Follow Up Due, Not Interested) with a single click</span>,
-                            <span key={5}><strong>Follow-Up Filtering</strong> — Filter the entire lead list by stage so you always know exactly who needs attention today</span>
+                            <span key={1}><strong>Lead Sidebar</strong> - All outreach targets listed in one scrollable panel with color-coded status badges showing exactly where each lead stands</span>,
+                            <span key={2}><strong>Rich Lead Detail Panel</strong> - Click any lead to see full business info, social links, website, location data, and auto-generated outreach email</span>,
+                            <span key={3}><strong>Outreach Timeline</strong> - Track every email sent, log dates, and update statuses in real time with instant auto-save</span>,
+                            <span key={4}><strong>Status Management</strong> - Change lead status (Pending, Responded, Follow Up Due, Not Interested) with a single click</span>,
+                            <span key={5}><strong>Follow-Up Filtering</strong> - Filter the entire lead list by stage so you always know exactly who needs attention today</span>
                         ].map((item, i) => (
                             <div key={i} className="flex items-start bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:border-indigo-200 transition-colors">
                                 <CheckCircle2 className="w-6 h-6 text-emerald-500 mr-4 flex-shrink-0 mt-0.5" />
@@ -161,7 +161,7 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 5 — HOW IT WORKS */}
+            {/* SECTION 5 - HOW IT WORKS */}
             <section className="py-20 border-y border-slate-100 bg-slate-50">
                 <div className="container-custom max-w-5xl mx-auto">
                     <div className="text-center mb-16">
@@ -177,10 +177,10 @@ export default function OutreachCRMPage() {
                         <div className="md:hidden absolute top-[10%] bottom-[10%] left-[28px] w-1 bg-gradient-to-b from-indigo-200/0 via-indigo-400 to-indigo-200/0 z-0"></div>
 
                         {[
-                            { step: "01", text: "Add your leads — paste in business names, contacts, and social links" },
-                            { step: "02", text: "Send your outreach — the CRM logs the date and sets follow-up tracking automatically" },
+                            { step: "01", text: "Add your leads - paste in business names, contacts, and social links" },
+                            { step: "02", text: "Send your outreach - the CRM logs the date and sets follow-up tracking automatically" },
                             { step: "03", text: "Update status with one click as leads respond or progress" },
-                            { step: "04", text: "Filter by follow-up stage daily — never miss a lead that needs attention" }
+                            { step: "04", text: "Filter by follow-up stage daily - never miss a lead that needs attention" }
                         ].map((item, i) => (
                             <div key={i} className="relative z-10 flex-1 flex md:flex-col items-center md:text-center gap-6 md:gap-5 mb-8 md:mb-0 px-4">
                                 <div className="w-14 h-14 rounded-full bg-white border-2 border-indigo-400 text-indigo-600 flex items-center justify-center font-bold text-xl shadow-[0_0_15px_rgba(99,102,241,0.15)] flex-shrink-0">
@@ -193,7 +193,7 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 6 — TECH STACK */}
+            {/* SECTION 6 - TECH STACK */}
             <section className="py-20 text-center">
                 <div className="container-custom">
                     <h2 className="text-2xl font-bold mb-8 text-slate-800">Tech Stack</h2>
@@ -213,7 +213,7 @@ export default function OutreachCRMPage() {
                 </div>
             </section>
 
-            {/* SECTION 8 — CTA */}
+            {/* SECTION 8 - CTA */}
             <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
                 <div className="container-custom max-w-3xl mx-auto text-center">
                     <h2 className="text-4xl font-bold mb-6 text-white">Need Something Built For Your Workflow?</h2>
