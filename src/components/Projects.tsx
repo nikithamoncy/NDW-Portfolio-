@@ -52,8 +52,8 @@ export default function Projects() {
                         <a
                             key={index}
                             href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            target={project.link.startsWith('/') ? undefined : "_blank"}
+                            rel={project.link.startsWith('/') ? undefined : "noopener noreferrer"}
                             className="bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-300 transition-all duration-300 group flex flex-col md:flex-row items-stretch block"
                         >
                             {/* Card Header / Image Area */}
