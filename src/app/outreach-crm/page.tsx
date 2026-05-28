@@ -45,7 +45,7 @@ export default function OutreachCRMPage() {
             {/* SECTION 7 — DEMO VIDEO (Moved to top based on previous design choice) */}
             <section id="demo" className="pb-24 pt-8 bg-slate-50 relative overflow-hidden">
                 <div className="container-custom max-w-4xl mx-auto text-center relative z-10">
-                    <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-[9/16] w-[300px] md:w-[340px] mx-auto group flex items-center justify-center">
+                    <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-video w-full max-w-3xl mx-auto group flex items-center justify-center">
                         <div className="absolute -inset-4 bg-indigo-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
                         
                         <iframe 
