@@ -48,14 +48,13 @@ export default function OutreachCRMPage() {
                     <div className="relative rounded-[2rem] overflow-hidden bg-slate-900 border-[8px] border-slate-800 shadow-2xl aspect-[9/16] w-[300px] md:w-[340px] mx-auto group flex items-center justify-center">
                         <div className="absolute -inset-4 bg-indigo-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
                         
-                        {/* Placeholder for future YouTube Short embed */}
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-20">
-                            <div className="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center mb-4 text-slate-400 border border-slate-700/50 backdrop-blur-sm">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <p className="text-white font-medium text-lg mb-2">[YouTube Demo Video]</p>
-                            <p className="text-slate-400 text-sm max-w-[200px]">Link will be added here once the video is uploaded.</p>
-                        </div>
+                        <iframe 
+                            src="https://www.youtube.com/embed/L8XJ-aplzxk?autoplay=1&mute=1&loop=1&playlist=L8XJ-aplzxk" 
+                            title="Outreach CRM Demo"
+                            className="absolute top-0 left-0 w-full h-full z-20"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowFullScreen
+                        ></iframe>
                     </div>
                     <p className="text-slate-500 mt-6 text-sm font-medium tracking-wide uppercase">
                         See It In Action
