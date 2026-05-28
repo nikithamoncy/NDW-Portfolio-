@@ -4,12 +4,22 @@ import Image from "next/image";
 export default function Projects() {
     const projects = [
         {
-            title: "Apex Forge Gym",
-            type: "Website Development",
-            description: "A modern, high-energy promotional website for a premium fitness center. Built for speed and conversion.",
-            link: "https://apex-forge-gym.vercel.app/",
-            tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-            color: "from-sky-500 to-blue-500",
+            title: "Intelligent Instagram Sales Agent",
+            type: "AI Automation",
+            description: "An AI agent that automates responses to potential customers instantly. Detects user intent, answers FAQs using a custom knowledge base, and saves leads to Google Sheets.",
+            link: "/instagram-agent",
+            tech: ["n8n", "OpenAI", "Instagram Graph API"],
+            color: "from-pink-500 to-purple-500",
+            image: "/instagram-agent.png"
+        },
+        {
+            title: "Custom Outreach CRM",
+            type: "Productivity Tool",
+            description: "A lightweight lead management system built from scratch to replace messy spreadsheets. Track leads, log communications, and manage follow-ups efficiently.",
+            link: "/outreach-crm",
+            tech: ["Next.js", "Supabase", "Tailwind CSS"],
+            color: "from-indigo-500 to-purple-500",
+            image: "/outreach-crm.png"
         },
         {
             title: "Luminar Salon",
@@ -20,31 +30,12 @@ export default function Projects() {
             color: "from-blue-500 to-cyan-500",
         },
         {
-            title: "Intelligent Instagram Sales Agent",
-            type: "AI Automation",
-            description: "An AI agent that automates responses to potential customers instantly. Detects user intent, answers FAQs using a custom knowledge base, and saves leads to Google Sheets.",
-            link: "/instagram-agent",
-            tech: ["n8n", "OpenAI", "Instagram Graph API"],
-            color: "from-pink-500 to-purple-500",
-            image: "/instagram-agent.png"
-        },
-        {
-            title: "Intelligent Inbox Manager",
-            type: "AI Automation",
-            description: "Turns a chaotic inbox into a fully automated system. Autonomously organizes emails and executes search commands directly via Telegram.",
-            link: "#",
-            tech: ["n8n", "LLM Integration", "Telegram API"],
-            color: "from-green-500 to-emerald-500",
-            image: "/inbox-agent.png"
-        },
-        {
-            title: "Custom Outreach CRM",
-            type: "Productivity Tool",
-            description: "A lightweight lead management system built from scratch to replace messy spreadsheets. Track leads, log communications, and manage follow-ups efficiently.",
-            link: "/outreach-crm",
-            tech: ["Next.js", "Supabase", "Tailwind CSS"],
-            color: "from-indigo-500 to-purple-500",
-            image: "/outreach-crm.png"
+            title: "Apex Forge Gym",
+            type: "Website Development",
+            description: "A modern, high-energy promotional website for a premium fitness center. Built for speed and conversion.",
+            link: "https://apex-forge-gym.vercel.app/",
+            tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+            color: "from-sky-500 to-blue-500",
         }
     ];
 
