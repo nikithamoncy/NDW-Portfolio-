@@ -36,6 +36,15 @@ export default function Projects() {
             tech: ["n8n", "LLM Integration", "Telegram API"],
             color: "from-green-500 to-emerald-500",
             image: "/inbox-agent.png"
+        },
+        {
+            title: "Custom Outreach CRM",
+            type: "Productivity Tool",
+            description: "A lightweight lead management system built from scratch to replace messy spreadsheets. Track leads, log communications, and manage follow-ups efficiently.",
+            link: "/outreach-crm",
+            tech: ["Next.js", "Supabase", "Tailwind CSS"],
+            color: "from-indigo-500 to-purple-500",
+            image: "/outreach-crm.png"
         }
     ];
 
